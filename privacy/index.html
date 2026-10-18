@@ -19,7 +19,7 @@
 <div class="table"><table>
 <thead><tr><th>Information</th><th>Why the app uses it</th><th>Where it goes</th></tr></thead>
 <tbody>
-<tr><td>Photos you choose to upload</td><td>To show them on your frame</td><td>Uploaded to the frame owner's cloud storage account (Koofr); the frame then downloads them</td></tr>
+<tr><td>Photos you choose to upload</td><td>To show them on your frame</td><td>Uploaded to the frame owner's cloud storage account; the frame then downloads them</td></tr>
 <tr><td>Frame pairing details (frame address and a sign-in token)</td><td>To connect to frames you have paired</td><td>Stored only on your iPhone, in the iOS Keychain</td></tr>
 <tr><td>Cloud storage sign-in for the frame (email and an app password)</td><td>To upload photos to the frame's cloud storage</td><td>Provided by your frame; stored only on your iPhone, in the iOS Keychain</td></tr>
 <tr><td>Your iPhone's device name</td><td>So the frame owner can see which phones are paired</td><td>Sent to the frame when you pair</td></tr>
@@ -31,8 +31,8 @@
 <h2>Who else is involved</h2>
 <ul>
 <li><strong>Your photo frame.</strong> It belongs to you or to the person who invited you. It keeps a list of paired phones and a log of pairing and security events. The developer has no access to it.</li>
-<li><strong>Koofr</strong> (cloud storage). Uploaded photos are stored in the frame owner's own Koofr account, under that account's terms and privacy policy. The developer has no access to it.</li>
-<li><strong>Tailscale.</strong> When you are away from home, the app reaches your frame through an encrypted (HTTPS) address the frame owner set up with Tailscale. Tailscale relays the connection; it is not given your photos in readable form.</li>
+<li><strong>Cloud storage account.</strong> Uploaded photos are stored in the cloud storage account the frame owner chose for the frame, under that provider's terms and privacy policy. The developer has no access to it.</li>
+<li><strong>Secure remote connection.</strong> When you are away from home, the app reaches your frame through an encrypted (HTTPS) address the frame owner set up. The service that relays this connection cannot read your photos.</li>
 <li><strong>Apple.</strong> If you have chosen to share analytics with app developers in your iPhone's settings, Apple may share anonymous crash reports with the developer. You can turn this off in Settings → Privacy &amp; Security → Analytics &amp; Improvements.</li>
 </ul>
 <p>No data is sold, shared for advertising, or used to track you across apps or websites.</p>
